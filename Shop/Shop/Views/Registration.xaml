@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shop.Views.Registration">
+    <StackLayout BackgroundColor="#FFEACB">
+
+        <StackLayout  VerticalOptions="Start"  BackgroundColor="Orange">
+            <Label HorizontalOptions="Center" Text="Registration" FontSize="Title" Margin="10"></Label>
+        </StackLayout>
+
+
+
+        <StackLayout VerticalOptions="FillAndExpand" Margin="40, 60, 40, 0" >
+            <Label Text="Name" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#000000"></Label>
+            <Frame BackgroundColor="#FFEACB" CornerRadius="50"  BorderColor="Black" Padding="0,0,0,0">
+                <Entry x:Name="Name"/>
+            </Frame>
+            <Label Text="Email" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#000000"></Label>
+            <Frame BackgroundColor="#FFEACB" CornerRadius="50"  BorderColor="Black" Padding="0,0,0,0">
+                <Entry/>
+            </Frame>
+            <Label Text="Password" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#000000"></Label>
+            <Frame BackgroundColor="#FFEACB" CornerRadius="50"  BorderColor="Black" Padding="0,0,0,0">
+                <Entry x:Name="password" IsPassword="True"/>
+            </Frame>
+            <Label Text="ConfirmPassword" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#000000"></Label>
+            <Frame BackgroundColor="#FFEACB" CornerRadius="50"  BorderColor="Black" Padding="0,0,0,0">
+                <Entry IsPassword="True"/>
+            </Frame>
+            <Button BorderWidth="1" BorderColor="Black" Margin="100, 60, 100, 80" CornerRadius="10" Text="Submit" TextColor="Black" BackgroundColor="Green" IsTabStop="True" Clicked="Button_Clicked"/>
+        </StackLayout>
+
+
+    </StackLayout>
+
+ </ContentPage>

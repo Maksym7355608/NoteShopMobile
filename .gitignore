@@ -1,0 +1,10 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/labs
+/Shop/.vs/Shop
+/Shop/Shop/bin/Debug/netstandard2.0
+/Shop/Shop/obj
+/Shop/Shop.Android/bin/Debug
+/Shop/Shop.Android/obj

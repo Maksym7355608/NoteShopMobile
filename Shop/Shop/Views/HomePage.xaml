@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shop.Views.HomePage">
+
+    <StackLayout BackgroundColor="#FFEACB">
+
+        <StackLayout  VerticalOptions="Start"  BackgroundColor="Orange">
+            <Label HorizontalOptions="Center" Text="Office shop" FontSize="Title" Margin="10"></Label>
+        </StackLayout>
+
+
+        <StackLayout  VerticalOptions="Start" >
+            <Label TextColor="#000000" HorizontalOptions="Center" Text="The most popular products" FontSize="Title" Margin="10"></Label>
+        </StackLayout>
+
+        <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" VerticalOptions="FillAndExpand" Margin="40, 0,40, 0" >
+
+            <StackLayout x:Name="Popular"  Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="50">
+                
+            </StackLayout>
+
+        </ScrollView>
+
+        <StackLayout  VerticalOptions="Start" >
+            <Label TextColor="#000000" HorizontalOptions="Center" Text="Promotions" FontSize="Title" Margin="10"></Label>
+        </StackLayout>
+        <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" VerticalOptions="FillAndExpand" Margin="40, 0,40, 0" >
+
+            <StackLayout   x:Name="Promotions" Orientation="Horizontal"  Spacing="50">
+                
+
+            </StackLayout>
+
+        </ScrollView>
+
+
+    </StackLayout>
+
+</ContentPage>
