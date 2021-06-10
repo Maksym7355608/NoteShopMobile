@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shop.Views.LoginPage">
+
+    <StackLayout BackgroundColor="#FFEACB">
+        <StackLayout  VerticalOptions="Start"  BackgroundColor="Orange">
+            <Label Text="Login" HorizontalTextAlignment="Center"  FontSize="Title" Margin="10"/>
+        </StackLayout>
+
+
+        <StackLayout Margin="40, 100, 40, 0" VerticalOptions="FillAndExpand"  >
+
+            <Label IsTabStop="True" Margin="0, 50, 0, 0" Text="Email" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#000000" />
+            <Frame BackgroundColor="#FFEACB" CornerRadius="50"  BorderColor="Black" Padding="0,0,0,0">
+                <Entry x:Name="name"/>
+            </Frame>
+            <Label x:Name="EmailValidator" IsTabStop="True" Margin="0, 10, 0, 0" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Red" />
+            <Label Text="Password" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#000000"/>
+            <Frame BackgroundColor="#FFEACB" CornerRadius="50"  BorderColor="Black" Padding="0,0,0,0">
+                <Entry x:Name="pass" IsPassword="True"/>
+            </Frame>
+            <Label IsTabStop="True" x:Name="passwrodvalidator" Margin="0, 10, 0, 0"  HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Red" />
+            <Button BorderWidth="1" HorizontalOptions="Start" BorderColor="Black" Margin="20, 20, 20, 20" CornerRadius="10" Text="Submit" TextColor="Black" BackgroundColor="Green" IsTabStop="True" Clicked="Button_Clicked"/>
+            <Button BorderWidth="1" HorizontalOptions="End" BorderColor="Black"  Margin="20, -73, 20, 20" CornerRadius="10" Text="Registration" TextColor="Black" BackgroundColor="Green" IsTabStop="True" Clicked="Registration_Clicked"/>
+
+        </StackLayout>
+
+
+
+    </StackLayout>
+
+</ContentPage>
+
+

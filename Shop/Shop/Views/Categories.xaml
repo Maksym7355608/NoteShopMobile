@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shop.Views.Categories">
+    <StackLayout BackgroundColor="#FFEACB">
+
+        <StackLayout  VerticalOptions="Start"  BackgroundColor="Orange">
+            <Label HorizontalOptions="Center" Text="Categories" FontSize="Title" Margin="10"></Label>
+        </StackLayout>
+
+
+        <ScrollView>
+            <StackLayout x:Name="stack" VerticalOptions="FillAndExpand" Margin="40, 60, 40, 0" >
+
+            </StackLayout>
+        </ScrollView>
+
+
+    </StackLayout>
+
+</ContentPage>

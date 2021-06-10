@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shop.Views.Cart">
+    <StackLayout BackgroundColor="#FFEACB">
+
+        <StackLayout  VerticalOptions="Start"  BackgroundColor="Orange">
+            <Label HorizontalOptions="Center" Text="Cart" FontSize="Title" Margin="10"></Label>
+        </StackLayout>
+
+
+        <ScrollView>
+            <StackLayout x:Name="cart" VerticalOptions="FillAndExpand" Margin="40, 60, 40, 0" >
+              
+            </StackLayout>
+        </ScrollView>
+
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Label x:Name="Sum" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#000000"></Label>
+            <Button BorderWidth="1" 
+                    BorderColor="Black" 
+                    Margin="110, 10, 90, 20" 
+                    CornerRadius="10" 
+                    Text="Buy" 
+                    TextColor="Black" 
+                    BackgroundColor="Green" 
+                    IsTabStop="True" 
+                     Clicked="Button_Clicked"/>
+
+        </StackLayout>
+
+     
+    </StackLayout>
+
+</ContentPage>
